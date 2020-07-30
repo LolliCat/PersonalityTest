@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Personality Test</title>
+    <script src="jquery.js"></script>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <h1>What is your Type?</h1>
+    <div>
+      <form >
+        <label id="left">
+            <input class="introv radio" type="radio" hidden="true" name="introvert" value="introvert"> <img src="coffee-sugar-cream.jpg">
+        </label>
+        
+        <label id="right">
+            <input class="extrov radio" type="radio" hidden="true" name="extrovert" value="extrovert"> <img src="coffee-black.jpg">
+        </label>
+      </form>
+    </div>
+        
+    <br>
+    <br>
+     
+    <meter id="meter" min="-9" max="9" low="-3" high="3" optimum="6" value="0"></meter>
+    <br>
+    <br>
+
+    <form >
+        Your Name: <input id="user-name" type="text" />  
+      <input id="submit-button" type="submit" disabled="disabled" value="Click for your results" />
+    </form>
+
+    <aside id="user-results"></aside>
+    <br>
+    <div id="results-symbol"></div>
+    <br>
+
+  
+    <table border="1px solid #000">          
+      <tr>
+        <th>Behavior/Preference</th>
+        <th>Observed</th>
+      </tr>
+    </table>
+
+
+    <script src="forms.js"></script>
+  </body>
+</html>
